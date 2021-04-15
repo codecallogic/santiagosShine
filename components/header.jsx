@@ -5,13 +5,14 @@ const Header = ({}) => {
 
   const header = css`
     grid-column: 1/-1;
-    // background-image: url('https://images.unsplash.com/photo-1484154218962-a197022b5858?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2553&q=80');
+    background-image: url('https://images.unsplash.com/photo-1484154218962-a197022b5858?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2553&q=80');
     background-size: cover;
     background-position: 0% 45%;
   `
   
   return (
     <div className={`header ${cx(header)}`}>
+      <div className="header-filter"></div>
       <Nav></Nav>
       <div className="header-container">
         <div className="header-left">

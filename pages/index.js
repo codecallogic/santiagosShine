@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 import {css, cx} from '@emotion/css'
 import Header from '../components/header'
+import Datepicker from '../components/datepicker'
 import {useEffect, useRef, useState} from 'react'
 
 const Home = ({}) => {
@@ -50,28 +51,8 @@ const Home = ({}) => {
   return (
     <>
     <Header></Header>
+    <Datepicker />
     <div className="home">
-      <div className={`home-services ${cx(services)}`}>
-        <div className="home-services-filter"></div>
-        <h1 className="home-services-heading">Some of our services</h1>
-        <div className="home-services-collection">
-          <div className="home-services-collection-item">
-            <svg><use xlinkHref="sprite.svg#icon-factory"></use></svg>
-            <h2>Industrial</h2>
-            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi maiores consectetur atque voluptatibus dolorem repellendus nulla aliquid, voluptas numquam commodi suscipit, sint ipsa soluta recusandae reiciendis quaerat perferendis temporibus cumque!</span>
-          </div>
-          <div className="home-services-collection-item">
-            <svg><use xlinkHref="sprite.svg#icon-home"></use></svg>
-            <h2>Residential</h2>
-            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi maiores consectetur atque voluptatibus dolorem repellendus nulla aliquid, voluptas numquam commodi suscipit, sint ipsa soluta recusandae reiciendis quaerat perferendis temporibus cumque!</span>
-          </div>
-          <div className="home-services-collection-item">
-            <svg><use xlinkHref="sprite.svg#icon-office"></use></svg>
-            <h2>Commerical</h2>
-            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi maiores consectetur atque voluptatibus dolorem repellendus nulla aliquid, voluptas numquam commodi suscipit, sint ipsa soluta recusandae reiciendis quaerat perferendis temporibus cumque!</span>
-          </div>
-        </div>
-      </div>
       <div className="home-quality" ref={item}>
         <div className="home-quality-left"></div>
         <div className="home-quality-center">
@@ -102,6 +83,28 @@ const Home = ({}) => {
         </div>
         <div className="home-quality-right"></div>
       </div>
+      <div className={`home-services ${cx(services)}`}>
+        <div className="home-services-filter"></div>
+        <h1 className="home-services-heading">Some of our services</h1>
+        <div className="home-services-collection">
+          <div className="home-services-collection-item">
+            <svg><use xlinkHref="sprite.svg#icon-factory"></use></svg>
+            <h2>Industrial</h2>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi maiores consectetur atque voluptatibus dolorem repellendus nulla aliquid, voluptas numquam commodi suscipit, sint ipsa soluta recusandae reiciendis quaerat perferendis temporibus cumque!</span>
+          </div>
+          <div className="home-services-collection-item">
+            <svg><use xlinkHref="sprite.svg#icon-home"></use></svg>
+            <h2>Residential</h2>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi maiores consectetur atque voluptatibus dolorem repellendus nulla aliquid, voluptas numquam commodi suscipit, sint ipsa soluta recusandae reiciendis quaerat perferendis temporibus cumque!</span>
+          </div>
+          <div className="home-services-collection-item">
+            <svg><use xlinkHref="sprite.svg#icon-office"></use></svg>
+            <h2>Commerical</h2>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi maiores consectetur atque voluptatibus dolorem repellendus nulla aliquid, voluptas numquam commodi suscipit, sint ipsa soluta recusandae reiciendis quaerat perferendis temporibus cumque!</span>
+          </div>
+        </div>
+      </div>
+      
     </div>
     </>
   )

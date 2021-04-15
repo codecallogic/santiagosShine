@@ -75,7 +75,8 @@ body {
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 5rem 0;
+    padding: 10rem 0;
+    background-image: linear-gradient(90deg, #fce8e8, rgba(117, 0, 2, 0.3));
     overflow: hidden; }
     .home-quality-left {
       grid-column: 1/3;
@@ -153,10 +154,7 @@ body {
   .nav-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    background-image: linear-gradient(90deg, #750002, #131a3f);
     color: white; }
-    .nav-container:hover {
-      background-image: linear-gradient(90deg, #750002, #131a3f); }
   .nav-logo {
     font-size: 3rem;
     text-decoration: none;
@@ -177,7 +175,7 @@ body {
         width: 0;
         bottom: -0.5rem;
         left: 0;
-        border-bottom: 2px solid #44a1a0;
+        border-bottom: 2px solid #fafffc;
         transition: all 1s; }
       .nav-menu-item:hover:before {
         width: 100%;
@@ -224,6 +222,16 @@ body {
       transform: scale(1.1);
       cursor: pointer; }
 
+.nice-dates-day:before {
+  background-color: #750002 !important; }
+
+.nice-dates-popover {
+  box-shadow: none;
+  border: 1px solid #750002 !important;
+  border-radius: 2px;
+  max-width: 480px;
+  transition: none; }
+
 .nav-menu-dropdown {
   list-style: none;
   position: absolute;
@@ -232,15 +240,17 @@ body {
   left: 0;
   min-width: max-content;
   height: max-content;
-  background-color: #750002;
+  background-color: #fafffc;
   visibility: hidden;
   opacity: 0;
   transition: all 0.8s cubic-bezier(0.81, 0.13, 0.93, 1.21); }
   .nav-menu-dropdown li {
-    padding: 0 1rem; }
+    padding: 0 1rem;
+    color: #131a3f; }
   .nav-menu-dropdown li:hover {
     cursor: pointer;
-    background-color: #247b7b;
+    background-color: #131a3f;
+    color: #fafffc;
     pointer-events: auto; }
 
 .nav-sticky {
@@ -253,15 +263,26 @@ body {
 .header {
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(90deg, #fce8e8, rgba(117, 0, 2, 0.3)); }
+  position: relative;
+  z-index: 1; }
+  .header-filter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #131a3f;
+    opacity: 0.3; }
   .header-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     padding: 10rem 0; }
   .header-left {
-    grid-column: 2/7; }
+    grid-column: 3/7;
+    color: #fafffc; }
     .header-left h1 {
-      font-size: 6.8rem;
+      font-size: 6rem;
       text-transform: uppercase;
       font-style: italic; }
     .header-left span {
@@ -288,12 +309,12 @@ body {
         height: 3rem;
         fill: #fafffc; }
   .header-right {
-    grid-column: 9/12;
+    grid-column: 8/11;
     background-color: #fafffc;
     text-align: center;
-    border: 0.2rem solid black;
+    border: 0.05rem solid black;
     border-radius: 1rem;
-    box-shadow: 0.5rem 1rem 2rem 0rem rgba(0, 0, 0, 0.4); }
+    box-shadow: 0.5rem 0.2rem 1rem 0.2rem rgba(255, 255, 255, 0.4); }
     .header-right svg {
       margin: 2rem 0;
       width: 8rem;

@@ -1,0 +1,10 @@
+.nice-dates-day:before {
+  background-color: $color-scheme-1 !important;
+}
+.nice-dates-popover {
+  box-shadow: none;
+  border: 1px solid $color-scheme-1 !important;
+  border-radius: 2px;
+  max-width: 480px;
+  transition: none;
+}

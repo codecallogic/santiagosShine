@@ -8,15 +8,10 @@
   &-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    background-image: linear-gradient(90deg, $color-scheme-1, $color-scheme-2);
+    // background-image: linear-gradient(90deg, $color-scheme-1, $color-scheme-2);
     color: white;
 
     &:hover {
-      background-image: linear-gradient(
-        90deg,
-        $color-scheme-1,
-        $color-scheme-2
-      );
     }
   }
 
@@ -46,7 +41,7 @@
         width: 0;
         bottom: -0.5rem;
         left: 0;
-        border-bottom: 2px solid $color-scheme-4;
+        border-bottom: 2px solid $color-scheme-3;
         transition: all 1s;
       }
 
