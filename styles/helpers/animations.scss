@@ -1,0 +1,59 @@
+.slideLeft {
+  animation: slideLeft 2s cubic-bezier(0.88, 0, 0, 1.72) forwards;
+}
+
+.slideRight {
+  animation: slideRight 2s cubic-bezier(0.88, 0, 0, 1.72) forwards;
+}
+
+.slideTop {
+  animation: slideTop 2s cubic-bezier(0.88, 0, 0, 1.72) forwards;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromFarLeft {
+  0% {
+    transform: translateX(1000%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}

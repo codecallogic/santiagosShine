@@ -1,0 +1,46 @@
+.form {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+
+  &-group-single {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.1rem solid $color-scheme-2;
+    padding: -0.2rem 0;
+    margin: 1rem 0;
+
+    svg {
+      margin-left: 2rem !important;
+      width: 2rem !important;
+      height: 2rem !important;
+      fill: $color-scheme-5 !important;
+    }
+
+    input {
+      padding: 1rem 2rem;
+      border: none;
+      outline: none;
+      background-color: $color-scheme-3;
+      font-size: 1.4rem;
+      width: 30rem;
+    }
+  }
+
+  button {
+    margin: 2rem 0;
+    padding: 2rem 3rem;
+    border: 0.2rem solid $color-scheme-1;
+    background-color: $color-scheme-3;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    color: $color-scheme-1;
+    transition: all 1s;
+
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  }
+}
