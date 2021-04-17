@@ -2,12 +2,20 @@
   animation: slideLeft 2s cubic-bezier(0.88, 0, 0, 1.72) forwards;
 }
 
+.slideLeftFast {
+  animation: slideLeft 1s ease-in forwards;
+}
+
 .slideRight {
   animation: slideRight 2s cubic-bezier(0.88, 0, 0, 1.72) forwards;
 }
 
 .slideTop {
   animation: slideTop 2s cubic-bezier(0.88, 0, 0, 1.72) forwards;
+}
+
+.slideTopEaseIn {
+  animation: slideTopEaseIn 0.5s ease-in forwards;
 }
 
 @keyframes slideLeft {
@@ -54,6 +62,18 @@
 
   100% {
     transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTopEaseIn {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0%);
     opacity: 1;
   }
 }

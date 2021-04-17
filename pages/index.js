@@ -43,15 +43,15 @@ const Home = ({}) => {
     });
     
     observer.observe(item.current);
-    
-    return () => observer.unobserve(item.current)
+
+    return () => observer.unobserve(item.current);
 
   }, [])
   
   return (
     <>
     <Header></Header>
-    <Datepicker />
+    <Datepicker/>
     <div className="home">
       <div className="home-quality" ref={item}>
         <div className="home-quality-left"></div>
@@ -104,7 +104,6 @@ const Home = ({}) => {
           </div>
         </div>
       </div>
-      
     </div>
     </>
   )
