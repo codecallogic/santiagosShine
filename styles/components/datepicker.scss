@@ -130,9 +130,16 @@
       }
 
       input {
-        padding: 1.5rem 0;
+        padding: 1.5rem 1rem;
         width: 100%;
         border: 0.1rem solid $light-shade-scheme-1;
+        outline: none;
+        transition: all 0.5s;
+
+        &:focus {
+          outline: none;
+          border: 0.1rem solid $color-scheme-1;
+        }
       }
     }
 

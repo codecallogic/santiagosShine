@@ -1,0 +1,23 @@
+.buttons {
+  &-select {
+    display: block;
+    padding: 2rem 3rem;
+    justify-self: center;
+    font-size: 1.8rem;
+    background-image: linear-gradient(
+      180deg,
+      rgba($color-scheme-1, 0.8),
+      rgba($color-scheme-1, 0.5)
+    );
+    border: none;
+    color: $color-scheme-3;
+    border-radius: 3rem;
+    margin: 0 auto;
+    transition: all 0.5s;
+
+    &:hover {
+      cursor: pointer;
+      border-radius: 0;
+    }
+  }
+}

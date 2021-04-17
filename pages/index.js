@@ -2,6 +2,7 @@ import styled from '@emotion/styled'
 import {css, cx} from '@emotion/css'
 import Header from '../components/header'
 import Datepicker from '../components/datepicker'
+import Pricing from '../components/pricing'
 import {useEffect, useRef, useState} from 'react'
 
 const Home = ({}) => {
@@ -105,6 +106,7 @@ const Home = ({}) => {
         </div>
       </div>
     </div>
+    <Pricing />
     </>
   )
 }

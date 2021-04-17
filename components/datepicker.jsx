@@ -49,7 +49,7 @@ const Datepicker = ({}) => {
         </div>
       </div>
       {!time &&
-      <div className={`datepicker ` + (!time ? ` slideTopEaseIn` : null)}>
+        <div className={`datepicker ` + (!time ? ` slideTopEaseIn` : null)}>
           <div>
           <p className="datepicker-selected">Selected date: {date ? format(date, 'dd MMM yyyy', { locale: enGB }) : 'none'}.</p>
           <DatePickerCalendar date={date} onDateChange={setDate} locale={enGB} />
